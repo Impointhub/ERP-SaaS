@@ -88,7 +88,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
-## Group-COA 2-6 : The system displays the message "Successfully updated"
+## Group-COA 2.6 : The system displays the message "Successfully updated"
 
 * Given user is logged in&#x20;
 * And user have permission "create\_chart\_of\_account"
