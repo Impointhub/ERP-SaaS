@@ -1,0 +1,2 @@
+# Chart of account Detail
+

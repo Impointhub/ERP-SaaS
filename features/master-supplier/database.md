@@ -1,0 +1,38 @@
+# Database
+
+## Database&#x20;
+
+| Column Name  | Column Frontend | Data Type    | Rules                                                              | Sample                                                                                        |
+| ------------ | --------------- | ------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| id           |                 | int(10)      | Autoincrement, Primary Key                                         | 1                                                                                             |
+| code         | Code            | varchar(191) | Nullable, Unique                                                   | "SUP-001"                                                                                     |
+| name         | Name            | varchar(191) | Not Null                                                           | "PT. Sumber Makmur"                                                                           |
+| address      | Address         | varchar(191) | Nullable                                                           | "Jl. Sudirman No.10"                                                                          |
+| phone        | Phone           | varchar(50)  | Nullable                                                           | "021-12345678"                                                                                |
+| email        | Email           | varchar(191) | Nullable                                                           | ["](mailto:info@sumbermakmur.co.id)[info@sumbermakmur.co.id](mailto:info@sumbermakmur.co.id)" |
+| notes        |                 | text         | Nullable                                                           | "Supplier utama untuk bahan baku"                                                             |
+| created\_by  |                 | int(10)      | Foreign Key → users(id), Nullable, onDelete: restrict              | 1                                                                                             |
+| updated\_by  |                 | int(10)      | Foreign Key → users(id), Nullable, onDelete: restrict              | 2                                                                                             |
+| archived\_by |                 | int(10)      | Foreign Key → users(id), Nullable, onDelete: restrict              | 3                                                                                             |
+| created\_at  |                 | timestamp    | Not Null, Default: CURRENT\_TIMESTAMP                              | 2025-08-19 19:00                                                                              |
+| updated\_at  |                 | timestamp    | Not Null, Default: CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | 2025-08-19 19:05                                                                              |
+| archived\_at |                 | timestamp    | Nullable                                                           | 2025-08-20 10:00                                                                              |
+
+
+
+## Sample Database&#x20;
+
+| id | code    | name                             | email                       | address                                                       | phone        | notes                                | created\_by | created\_at         | updated\_by | updated\_at         | archived\_by | archived\_at        |
+| -- | ------- | -------------------------------- | --------------------------- | ------------------------------------------------------------- | ------------ | ------------------------------------ | ----------- | ------------------- | ----------- | ------------------- | ------------ | ------------------- |
+| 1  | SUP-001 | PT. Bumi Lautan Kopi             | info@bumilautan.co.id       | Jl. Sudirman No. 10, Jakarta                                  | 021-1234567  | Supplier utama untuk biji kopi       | 1           | 01/08/2025 09:00:00 |             | 01/08/2025 09:00:00 |              |                     |
+| 2  | SUP-002 | PT. Dua Burung                   | contact@duaburung.id        | Delta Harmoni 52 Waru, Deltasari Baru, Surabaya               | 031-8550694  | Supplier biji kopi berkualitas       | 1           | 02/08/2025 10:30:00 | 2           | 10/08/2025 14:00:00 |              |                     |
+| 3  | SUP-003 | UD. Hadi Sucipto                 | hadi.sucipto@email.com      | Jl. Hayam Wuruk No. 25, Surabaya                              | 031-5678910  |                                      | 1           | 03/08/2025 11:00:00 |             | 03/08/2025 11:00:00 |              |                     |
+| 4  | SUP-004 | Toko Merbabu                     | cs@toko-merbabu.com         | Jl. Pemuda No. 15, Bandung                                    | 022-9876543  | Retail supplier untuk kopi specialty | 1           | 04/08/2025 08:30:00 | 3           | 15/08/2025 16:00:00 |              |                     |
+| 5  | SUP-005 | Toko Avrilya Jaya                | avrilya@tokoavrilya.co.id   | Jl. Rejosari Kav. Jeruk Blok A No 7-8 Benowo, Pakal, Surabaya | 0822-4593523 | Bu Netty - supplier kopi robusta     | 1           | 05/08/2025 09:15:00 |             | 05/08/2025 09:15:00 |              |                     |
+| 6  | SUP-006 | CV. Rumah Plastik                | info@rumahplastik.com       | Jl. Industri No. 30, Semarang                                 | 024-5432109  | Supplier untuk kemasan plastik       | 2           | 06/08/2025 10:00:00 |             | 06/08/2025 10:00:00 |              |                     |
+| 7  | SUP-007 | UD. Rumah Plastik Jaya           | contact@rumahplastikjaya.id | Jl. Merak No. 12, Semarang                                    | 024-3456789  | Supplier kemasan makanan             | 1           | 07/08/2025 14:30:00 | 1           | 20/08/2025 11:00:00 |              |                     |
+| 8  | SUP-008 | PT. Sarana Mesin                 | sales@saranaamesin.com      | Jl. Gatot Subroto No. 50, Bandung                             | 022-6789012  | Supplier mesin produksi kopi         | 2           | 08/08/2025 13:00:00 |             | 08/08/2025 13:00:00 |              |                     |
+| 9  | SUP-009 | PT. Lancar Jaya                  | info@lanca.co.id            | Jl. Merdeka No. 8, Jakarta                                    | 021-2345678  |                                      | 1           | 09/08/2025 15:30:00 |             | 09/08/2025 15:30:00 |              |                     |
+| 10 | SUP-010 | Jawa Indah Supplier              | jawaindah@supplier.com      | Jl. Ahmad Yani No. 45, Semarang                               | 024-7890123  | Supplier multifungsi                 | 3           | 10/08/2025 09:45:00 | 2           | 18/08/2025 10:00:00 |              |                     |
+| 11 | SUP-011 | PT. Stationary Supply (Archived) |                             |                                                               |              | Supplier yang sudah tidak aktif      | 1           | 15/07/2025 08:00:00 |             | 15/07/2025 08:00:00 | 4            | 15/07/2025 08:00:00 |
+| 12 | SUP-012 | Toko Gamas (Archived)            |                             |                                                               |              | Tidak lagi berkerjasama              | 2           | 20/07/2025 10:00:00 |             | 20/07/2025 10:00:00 | 5            | 20/07/2025 10:00:00 |

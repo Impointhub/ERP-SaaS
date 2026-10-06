@@ -1,0 +1,29 @@
+# Master User
+
+## Database&#x20;
+
+| Column Name (database) | Column Name (frontend) | Data Type    | Rules                                                              | Sample Data          | Notes                                                                                                            |
+| ---------------------- | ---------------------- | ------------ | ------------------------------------------------------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| id                     |                        | int(10)      | Autoincreament                                                     | 1                    | Untuk memberikan id pada setiap user                                                                             |
+| name                   | username               | varchar(255) | unique, not null                                                   | nrainii              | Untuk memberikan username pada user di personal finance, agar bisa mempermudah untuk login pada personal finance |
+| first\_name            | first\_name            | varchar(255) | not null                                                           | nur                  | untuk memberikan nama awal pada user                                                                             |
+| last\_name             | last\_name             | varchar(255) | not null                                                           | aini                 | untuk memberikan nama akhir pada user                                                                            |
+| address                | address                | text         | null able                                                          |                      |                                                                                                                  |
+| phone                  | phone                  | varchar(255) | null able                                                          |                      |                                                                                                                  |
+| email                  | email                  | varchar(255) | unique                                                             | impointhub@gmail.com | Untuk memberikan email user yang create                                                                          |
+| created\_at            |                        | timestamp    | Not Null, Default: CURRENT\_TIMESTAMP                              | 07/08/2025 11:46     | Untuk menampilkan tanggal create user                                                                            |
+| updated\_at            |                        | timestamp    | Not Null, Default: CURRENT\_TIMESTAMP ON UPDATE CURRENT\_TIMESTAMP | null                 | Untuk menampilkan tanggal update data user                                                                       |
+| created\_by            |                        | int(10)      | Not Null, Foreign Key to users(id)                                 | 1                    | Untuk menampilkan user yang create                                                                               |
+| updated\_by            |                        | int(10)      | Nullable, Foreign Key to users(id)                                 | null                 | Untuk menampilkan user yang update                                                                               |
+| archived\_at           |                        | datetime     |                                                                    |                      | Untuk menampilkan tanggal archive user                                                                           |
+| archived\_by           |                        | int(10)      |                                                                    |                      | Untuk menampilkan user yang archive                                                                              |
+
+## Sample Database&#x20;
+
+| id | name       | first\_name | last\_name | address                      | phone       | email                                                 | created\_at         | updated\_at         | created\_by | updated\_by | archived\_at | archived\_by |
+| -- | ---------- | ----------- | ---------- | ---------------------------- | ----------- | ----------------------------------------------------- | ------------------- | ------------------- | ----------- | ----------- | ------------ | ------------ |
+| 1  | johndoe    | John        | Doe        | 123 Main St, New York, USA   | 81234567890 | [john.doe@email.com](mailto:john.doe@email.com)       | 2025-01-01 09:00:00 | 2025-01-01 09:00:00 | 1           | NULL        | NULL         | NULL         |
+| 2  | janesmith  | Jane        | Smith      | 456 Elm St, Los Angeles, USA | 82345678901 | [jane.smith@email.com](mailto:jane.smith@email.com)   | 2025-02-15 14:30:00 | 2025-02-15 14:30:00 | 2           | 2           | NULL         | NULL         |
+| 3  | ahmadyani  | Ahmad       | Yani       | Jl. Sudirman No.45, Jakarta  | 81122334455 | [ahmad.yani@email.com](mailto:ahmad.yani@email.com)   | 2025-03-10 08:15:00 | 2025-04-11 10:00:00 | 3           | 3           | NULL         | NULL         |
+| 4  | sitiaminah | Siti        | Aminah     | Jl. Diponegoro 21, Bandung   | 85512345678 | [siti.aminah@email.com](mailto:siti.aminah@email.com) | 2025-05-05 11:00:00 | 2025-05-05 11:00:00 | 1           | NULL        | NULL         | NULL         |
+| 5  | roberttan  | Robert      | Tan        | 789 Pine Ave, Singapore      | 6591234567  | [robert.tan@email.com](mailto:robert.tan@email.com)   | 2025-06-20 17:45:00 | 2025-06-20 17:45:00 | 2           | 2           | NULL         | NULL         |

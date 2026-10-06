@@ -1,0 +1,2 @@
+# Detail Minute of meeting
+

@@ -1,0 +1,27 @@
+# List Role
+
+## RLL.1 - Redirect to login page when user is not logged in
+
+* Given I have not logged in
+* When I access the page /master/role/1
+* Then the system displays the message "Redirect to login page"
+
+<figure><img src="../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+
+## RLL.2 - Redirect to forbidden page when user has no permission to read role
+
+* Given I already logged in
+* And I do not have permission to read role
+* When I access the page /master/role/1
+* Then the system displays the message "Redirect to forbidden page"
+
+<figure><img src="../../../.gitbook/assets/Forbidden.png" alt=""><figcaption></figcaption></figure>
+
+## RLL.3 - Successfully view the role list
+
+* Given I already logged in
+* And I have permission to read role
+* When I access the page /master/role
+* Then the user should see the list of roles on the page
+
+<figure><img src="../../../.gitbook/assets/image (587).png" alt=""><figcaption></figcaption></figure>
