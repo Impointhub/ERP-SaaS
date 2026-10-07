@@ -3,6 +3,7 @@
 ## 1.1.1. Displays a "wrong username or password" notification.
 
 * `GIVEN` user visit `/signin`
+* `AND` the correct user password "Admin123!"
 * `WHEN` user type "admin" into input "username"
 
 <figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
@@ -15,7 +16,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 
-* `THEN` user see "wrong username or password".
+* `THEN` user see "wrong username or password" on sign in page&#x20;
 
 ## 1.1.2 User can sign successfully
 
