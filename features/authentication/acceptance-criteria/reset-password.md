@@ -7,7 +7,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (448).png" alt=""><figcaption></figcaption></figure>
 
-* And  user click button "reset-password"
+* And user click button "reset-password"
 
 <figure><img src="../../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,17 +36,14 @@
 
 *   `AND` user see "Contain at least one uppercase letter".
 
-    <figure><img src="../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
-
-
-
+    <figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 * `AND` user see "Contain at least one numeric character".
 
-<figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 
 * `AND` user see "Contain at least one special character".
 
-<figure><img src="../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
 
 ## 2.3. The system display message "password doesnt match"
 

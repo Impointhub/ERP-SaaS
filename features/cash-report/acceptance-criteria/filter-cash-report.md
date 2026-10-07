@@ -1,7 +1,6 @@
 # Filter Cash Report
 
-CF1:&#x20;System displays data&#x20;according to filters
---------------------------
+## CF1: System displays data according to filters
 
 * Given I already logged in
 * And I have permission to read cash report
@@ -16,7 +15,7 @@ CF1:&#x20;System displays data&#x20;according to filters
 
 * And I select "31 Aug 2026" into column "date to"
 
-<figure><img src="../../../.gitbook/assets/image (891).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (890).png" alt=""><figcaption></figcaption></figure>
 
 * And I select "Kas Kecil Outlet 1" into column "account"
 

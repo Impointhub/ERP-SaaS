@@ -17,17 +17,16 @@
 
 <figure><img src="../../../.gitbook/assets/image (1021).png" alt=""><figcaption></figcaption></figure>
 
-DSP.3&#x20;\- Display notification&#x20;"Can't deleted&#x20;supplier, because is referenced"
---------------------------------------
+## DSP.3 - Display notification "Can't deleted supplier, because is referenced"
 
-* Given I already logged in&#x20;
-* And I have permission to delete supplier&#x20;
+* Given I already logged in
+* And I have permission to delete supplier
 * And I on the page /master/contact/supplier/1
-* When I click delete&#x20;
+* When I click delete
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-* Then I can view notification "Can't deleted  &#x20;supplier, because is referenced"&#x20;
+* Then I can view notification "Can't deleted supplier, because is referenced"
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -63,9 +62,7 @@ DSP.3&#x20;\- Display notification&#x20;"Can't deleted&#x20;supplier, because
 
 * When I type an incorrect password into the password field
 
-<figure><img src="../../../.gitbook/assets/image (636).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 * And I click OK
 

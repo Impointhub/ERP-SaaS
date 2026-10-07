@@ -1,28 +1,28 @@
 # Edit Payment Order
 
-## PO.2.1 :  User redirect to login page
+## PO.2.1 : User redirect to login page
 
 * `GIVEN` user visit `/finance/point/payment-order` url without signin
 * `THEN` user redirected to `Sign In` page
 
 <figure><img src="../../../.gitbook/assets/▶ COA Form Plan for CRUD UI.png" alt=""><figcaption></figcaption></figure>
 
-## PO.2.2 :  Redirect to the forbidden page
+## PO.2.2 : Redirect to the forbidden page
 
 * Given user is logged in
 * And the user does not have permission to edit a payment order
-* When user type `/finance/point/payment-order` url into browser&#x20;
-* Then user redirected to forbidden page&#x20;
+* When user type `/finance/point/payment-order` url into browser
+* Then user redirected to forbidden page
 
 <figure><img src="../../../.gitbook/assets/image (932).png" alt=""><figcaption></figcaption></figure>
 
 ## PO.2.3 : Unable to edit this form because it is already used in another transaction.
 
-* Given User on the page `/finance/point/payment-order/1`&#x20;
-* And the user already login&#x20;
-* And the user already have permission for the edit\_payment\_order.&#x20;
-* And the form have a reference cash out or bank out&#x20;
-* When user click button "edit" on the detail page&#x20;
+* Given User on the page `/finance/point/payment-order/1`
+* And the user already login
+* And the user already have permission for the edit\_payment\_order.
+* And the form have a reference cash out or bank out
+* When user click button "edit" on the detail page
 
 <figure><img src="../../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,15 +30,15 @@
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the detail page&#x20;
+* And the user should remain on the detail page
 
 ## PO.2.4 : The system displays the message "Payment to is required"
 
-* Given User on the page `/finance/point/payment-order/1`&#x20;
-* And the user already login&#x20;
-* And the user already have permission for the edit\_payment\_order.&#x20;
+* Given User on the page `/finance/point/payment-order/1`
+* And the user already login
+* And the user already have permission for the edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
-* When user click button "edit" on the detail page&#x20;
+* When user click button "edit" on the detail page
 
 <figure><img src="../../../.gitbook/assets/image (379).png" alt=""><figcaption></figcaption></figure>
 
@@ -62,7 +62,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
 
-* And the user type "reimburse biaya ekspedisi" into column "Transaction Notes"&#x20;
+* And the user type "reimburse biaya ekspedisi" into column "Transaction Notes"
 
 <figure><img src="../../../.gitbook/assets/image (936).png" alt=""><figcaption></figcaption></figure>
 
@@ -78,7 +78,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,13 +87,13 @@
 
 <figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.5 : The system displays the message "Payment method is required"
 
-* Given User on the page `/finance/point/payment-order/1`&#x20;
-* And the user already login&#x20;
-* And the user already have permission for the edit\_payment\_order.&#x20;
+* Given User on the page `/finance/point/payment-order/1`
+* And the user already login
+* And the user already have permission for the edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "edit"
 
@@ -119,7 +119,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
 
-* And the user type "reimburse biaya ekspedisi" into column "Transaction Notes"&#x20;
+* And the user type "reimburse biaya ekspedisi" into column "Transaction Notes"
 
 <figure><img src="../../../.gitbook/assets/image (938).png" alt=""><figcaption></figcaption></figure>
 
@@ -135,21 +135,21 @@
 
 <figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
 * Then user can view message "{Payment Method} is required"
 
-<figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.6 : The system displays the message "Account is required"
 
 * Given User on the page `/finance/point/payment-order`
-* And the user already login&#x20;
-* And the user already has permission for edit\_payment\_order.&#x20;
+* And the user already login
+* And the user already has permission for edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "Edit"
 
@@ -171,7 +171,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
 
@@ -179,17 +179,17 @@
 
 <figure><img src="../../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
 
-* And column notes, amount, and allocation will be disable&#x20;
+* And column notes, amount, and allocation will be disable
 
 <figure><img src="../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.7 : The system displays the message "Amount is required"
 
 * Given User on the page `/finance/point/payment-order/1`
-* And the user already login&#x20;
-* And the user already has permission for edit\_payment\_order.&#x20;
+* And the user already login
+* And the user already has permission for edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "Edit"
 
@@ -231,7 +231,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
 
@@ -239,13 +239,13 @@
 
 <figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.8 : The system displays the message "Please enter a valid amount using numbers only"
 
 * Given User on the page `/finance/point/payment-order/1`
-* And the user already logged in.&#x20;
-* And the user already has permission for edit\_payment\_order.&#x20;
+* And the user already logged in.
+* And the user already has permission for edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "Edit"
 
@@ -269,7 +269,7 @@
 
 * And the user choose "Beban ekspedisi" on the column "Account"
 
-<figure><img src="../../../.gitbook/assets/image (1033).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
 
 * And the user type "Reimburse biaya ekspedisi" into column "Transaction notes"
 
@@ -279,18 +279,18 @@
 
 <figure><img src="../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
-* Then the cursor will stop at the "Amount" column&#x20;
+* Then the cursor will stop at the "Amount" column
 * And display the message "Please enter a valid quantity using only numbers."
 
 <figure><img src="../../../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.9 : The system displays the message "Amount must be greater than zero"
 
 * Given User on the page `/finance/point/payment-order/1`
-* And the user already login&#x20;
-* And the user already has permission for edit\_payment\_order.&#x20;
+* And the user already login
+* And the user already has permission for edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "edit"
 
@@ -298,7 +298,7 @@
 
 * And the user type "2026-06-25" into "Payment Date"
 
-<figure><img src="../../../.gitbook/assets/image (1027).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
 
 * And the user choose "\[Cust-100]-Nganjuk" on the column "Payment To"
 
@@ -314,7 +314,7 @@
 
 * And the user choose "Beban ekspedisi" on the column "Account"
 
-<figure><img src="../../../.gitbook/assets/image (1034).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
 
 * And the user type "reimburse biaya ekspedisi" into column "transaction notes"
 
@@ -332,21 +332,21 @@
 
 <figure><img src="../../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (373).png" alt=""><figcaption></figcaption></figure>
 
 * Then user can view message "Amount must be greater than zero"
 
-<figure><img src="../../../.gitbook/assets/image (1031).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1030).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should remain on the edit page&#x20;
+* And the user should remain on the edit page
 
 ## PO.2.10 : The system displays the message "Successfully updated"
 
 * Given User on the page `/finance/point/payment-order/1`
-* And the user already login&#x20;
-* And the user already have permission for the edit\_payment\_order.&#x20;
+* And the user already login
+* And the user already have permission for the edit\_payment\_order.
 * and the user has a form that does not yet have a cash-out or bank out reference
 * When user click button "edit"
 
@@ -354,7 +354,7 @@
 
 * And the user type "2026-06-25" into "Payment Date"
 
-<figure><img src="../../../.gitbook/assets/image (1028).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1026).png" alt=""><figcaption></figcaption></figure>
 
 * And the user choose "\[CUS-100] nganjuk" on the column "Payment To"
 
@@ -370,15 +370,13 @@
 
 * And the user choose "Beban Ekspedisi" into column "account"
 
-<figure><img src="../../../.gitbook/assets/image (1035).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
 
-* And the user type "reimburse biaya ekspedisi" into column " Transaction Notes"&#x20;
+* And the user type "reimburse biaya ekspedisi" into column " Transaction Notes"
 
 <figure><img src="../../../.gitbook/assets/image (946).png" alt=""><figcaption></figcaption></figure>
 
-
-
-* And the user type "Rp.100.000" into column "Amount"&#x20;
+* And the user type "Rp.100.000" into column "Amount"
 
 <figure><img src="../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
@@ -390,7 +388,7 @@
 
 <figure><img src="../../../.gitbook/assets/image (386).png" alt=""><figcaption></figcaption></figure>
 
-* And the user click "review"&#x20;
+* And the user click "review"
 
 <figure><img src="../../../.gitbook/assets/image (1036).png" alt=""><figcaption></figcaption></figure>
 
@@ -402,15 +400,15 @@
 
 <figure><img src="../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
 
-* And the user should redirect to detail page&#x20;
+* And the user should redirect to detail page
 
 <figure><img src="../../../.gitbook/assets/image (947).png" alt=""><figcaption></figcaption></figure>
 
-* And approval status payment order should be pending&#x20;
+* And approval status payment order should be pending
 
-<figure><img src="../../../.gitbook/assets/image (391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>
 
-* And form status payment order should be pending&#x20;
+* And form status payment order should be pending
 
 <figure><img src="../../../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>
 

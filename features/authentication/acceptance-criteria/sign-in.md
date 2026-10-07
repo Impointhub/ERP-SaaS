@@ -34,3 +34,5 @@
 <figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 
 * `THEN` user redirected to home page.
+
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>

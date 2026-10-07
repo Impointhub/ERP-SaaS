@@ -71,7 +71,7 @@
 <figure><img src="../../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
 * And the system does not delete the role
-* And I should remain on the pop up delete&#x20;
+* And I should remain on the pop up delete
 
 ## RLD.5 - Successfully delete role, redirect to list page
 
@@ -94,10 +94,10 @@
 
 <figure><img src="../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
-* Then the system display notification "successfully deleted"&#x20;
+* Then the system display notification "successfully deleted"
 
-<figure><img src="../../../.gitbook/assets/image (584).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (583).png" alt=""><figcaption></figcaption></figure>
 
 * And the system redirects the user to the list page
 
-<figure><img src="../../../.gitbook/assets/image (586).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (585).png" alt=""><figcaption></figcaption></figure>

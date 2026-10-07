@@ -11,13 +11,11 @@
 ## GL2: Redirect to forbidden page
 
 * Given I already logged in
-* And I do not have permission to read general ledger&#x20;
-* When I type `/accounting/general-ledger` create into browser&#x20;
-* Then I redirect to forbidden page&#x20;
+* And I do not have permission to read general ledger
+* When I type `/accounting/general-ledger` create into browser
+* Then I redirect to forbidden page
 
 <figure><img src="../../../.gitbook/assets/image (932).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## GL3: Displaying General Ledger data
 
@@ -29,13 +27,13 @@
 
 * And I selects "01-08-2026" on column date from
 
-<figure><img src="../../../.gitbook/assets/image (968).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (967).png" alt=""><figcaption></figcaption></figure>
 
-* And I selects "31-08-2026" on column date to&#x20;
+* And I selects "31-08-2026" on column date to
 
 <figure><img src="../../../.gitbook/assets/image (969).png" alt=""><figcaption></figcaption></figure>
 
-* And I selects account "10101 · Cash on hand"&#x20;
+* And I selects account "10101 · Cash on hand"
 
 <figure><img src="../../../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
 
