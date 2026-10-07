@@ -1,12 +1,10 @@
 # Database
 
+1. Database group
 
+<table><thead><tr><th width="132.20001220703125">Column</th><th width="128">Column Frontend</th><th width="162.4000244140625">Rules</th><th>Sample Data</th><th width="289.60003662109375">Notes</th></tr></thead><tbody><tr><td>ID</td><td>-</td><td>Autoincreament</td><td>1</td><td>-</td></tr><tr><td>Main category</td><td>Main category</td><td>Required</td><td>Asset</td><td>Main category hanya memiliki 5 opsi yaitu : Asset, Liability, Equity, Income, Expense.</td></tr><tr><td>Major category</td><td>Major category</td><td>Required</td><td>Current Asset</td><td>Major Category terdiri dari :<br><br>1. Asset : current asset, fixed asset.<br>2. Liability : current liability, long term liability<br>3. Equity : Owner capital, retained earning<br>4. Expense : Operating expense, Non Operating , Cost of good sales<br>5. Income/Revenue : Operating income,Non Operating Income.<br></td></tr><tr><td>Parent id</td><td>-</td><td>-</td><td>1</td><td>untuk menampilkan group coa terhubung dengan parent yang mana.</td></tr><tr><td>Ancestors</td><td>-</td><td>-</td><td>1,6,8</td><td>Untuk mempermudah ketika perlu menampilkan salah beberapa data sub group.</td></tr><tr><td>Group code</td><td>Group code</td><td>Required, unique</td><td>Bank</td><td>Diperoleh dari master kategori</td></tr><tr><td>Group name</td><td>Group name</td><td>Required</td><td>Bank Lioni</td><td>Unique</td></tr><tr><td>Sort order</td><td>-</td><td></td><td>3</td><td>untuk menampilkan dari subgroup berada pada level berapa</td></tr></tbody></table>
 
-1. Database group&#x20;
-
-<table><thead><tr><th width="132.20001220703125">Column</th><th width="128">Column Frontend</th><th width="162.4000244140625">Rules</th><th>Sample Data</th><th width="289.60003662109375">Notes</th></tr></thead><tbody><tr><td>ID </td><td>-</td><td>Autoincreament </td><td>1</td><td>-</td></tr><tr><td>Main category </td><td>Main category </td><td>Required </td><td>Asset </td><td>Account Classification hanya memiliki 5 opsi yaitu : Asset, Liability, Equity, Income, Expense. </td></tr><tr><td>Major category </td><td>Major category </td><td>Required </td><td>Current Asset </td><td>Account type terdiri dari : <br><br>1. Asset : current asset, fixed asset. <br>2. Liability : current liability, long term liability <br>3. Equity : Owner capital, retained earning <br>4. Expense : Operating expense, Non Operating , Cost of good sales<br>5. Income/Revenue : Operating income,Non Operating Income. <br></td></tr><tr><td>Parent id </td><td>-</td><td>-</td><td>1</td><td>untuk menampilkan group coa terhubung dengan parent yang mana.</td></tr><tr><td>Ancestors </td><td>-</td><td>-</td><td>1,6,8</td><td>Untuk mempermudah ketika perlu menampilkan salah beberapa data sub group.</td></tr><tr><td>Group code </td><td>Group code </td><td>Required, unique </td><td>Bank </td><td>Diperoleh dari master kategori </td></tr><tr><td>Group name </td><td>Group name </td><td>Required </td><td>Bank Lioni </td><td>Unique </td></tr><tr><td>Sort order </td><td>-</td><td></td><td>3</td><td>untuk menampilkan dari subgroup berada pada level berapa </td></tr></tbody></table>
-
-2. Sample Database &#x20;
+2. Sample Database
 
 | ID | Main Category | Major Category        | Parent ID | Ancestors | Group Code | Group Name            | Sort Order |
 | -- | ------------- | --------------------- | --------- | --------- | ---------- | --------------------- | ---------- |
@@ -33,4 +31,3 @@
 | 21 | Expense       | Non Operating Expense | 5         | 5,21      | NONOPEX    | Non Operating Expense | 2          |
 | 22 | Expense       | Operating Expense     | 19        | 5,19,22   | SALARY     | Salary Expense        | 3          |
 | 23 | Expense       | Operating Expense     | 19        | 5,19,23   | UTIL       | Utility Expense       | 3          |
-
