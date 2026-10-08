@@ -93,4 +93,16 @@
 
 <figure><img src="../../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
-* And subgroup within this group will be move to the parent level
+* And subgroup within this group will be move to the parent level. Sample Data  :&#x20;
+  * Data before deletion :
+    * Asset&#x20;
+      * Kas & Bank&#x20;
+        * Kas Setara kas (deletion by user)
+          * Petty cash&#x20;
+        * Bank&#x20;
+  * Data after deletion :&#x20;
+    * Asset&#x20;
+      * Kas & Bank&#x20;
+        * Petty Cash (Petty cash increases at the parent level)
+        * Bank&#x20;
+
