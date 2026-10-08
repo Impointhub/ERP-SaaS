@@ -106,3 +106,42 @@
         * Petty Cash (Petty cash increases at the parent level)
         * Bank&#x20;
 
+## Group-coa 3.6 : Archive data chart of account&#x20;
+
+* Given user is logged in
+* And users have permission to delete the chart of accounts.
+* And password user for the account "Admin123"!
+* And user on the list page chart of account
+* And group "101 GPR" already have transaction&#x20;
+* When user click group "101 GPR"
+
+<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+
+* And the user clicks the delete button.
+
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
+* And user type "Admin123" into the column.
+
+<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+
+* And user click button delete
+
+<figure><img src="../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
+* Then I can view notification "successfully archived "
+
+<figure><img src="../../../.gitbook/assets/Successfully Archived Notification.png" alt=""><figcaption></figcaption></figure>
+
+* And subgroup within this group will be move to the parent level. Sample Data  :&#x20;
+  * Data before deletion :
+    * Asset&#x20;
+      * Kas & Bank&#x20;
+        * Kas Setara kas (archived by user)
+          * Petty cash&#x20;
+          * Bank&#x20;
+  * Data after deletion :&#x20;
+    * Asset&#x20;
+      * Kas & Bank&#x20;
+        * Petty Cash (Petty cash increases at the parent level)
+          * Bank&#x20;
